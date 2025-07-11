@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор калорий</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Калькулятор калорий Милти</h1>
+
+  <label for="date">Выберите дату:</label>
+  <input type="date" id="date" />
+
+  <label for="meal">Выберите блюдо:</label>
+  <select id="meal"></select>
+
+  <button onclick="addMeal()">Внести</button>
+
+  <div class="summary">
+    <p>Съедено: <span id="calories-eaten">0</span> ккал</p>
+    <p>Осталось: <span id="calories-left">2000</span> ккал</p>
+  </div>
+
+  <h3>Список съеденных блюд:</h3>
+  <ul id="meal-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
